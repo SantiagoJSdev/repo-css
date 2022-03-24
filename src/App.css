@@ -2,6 +2,9 @@ body {
   font-size: 16px;
 }
 :root{
+--color-black : black; 
+--color-white : white; 
+--color-icomSocial: #2D2D2C;
 --border-color: #ACBBEB;
 --border-button: #7C829D;
 --custom-filter: 
@@ -13,7 +16,7 @@ drop-shadow( 0 4px 0 var(--border-color));
 .container {
   width: 100%;
   height: 140vh;
-  background: white;
+  background: var(--color-white);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -21,19 +24,21 @@ drop-shadow( 0 4px 0 var(--border-color));
 .container__informacion{
   width: 56.3em;
   min-width: 40em;
-  height: 100%;
-  background: white;
+  height: 120vh;
+  background: var(--color-white);
   display: flex;
   justify-content: center;
   box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.29);
   flex-wrap: wrap;
-  margin-top: -30px;
-
+  margin-top: -2.375em;
+}
+.informacion__content{
+  display: flex;
 }
 .container__navBar{
   width: 100%;
-  height: 100px;
-  background: white;
+  height: 6.25em;
+  background: var(--color-white);
   z-index: 5;
   box-shadow: 0px 10px 13px -12px #c5c5c5, 50px -25px 7px -7px rgba(0,0,0,0);
 }
@@ -43,7 +48,6 @@ drop-shadow( 0 4px 0 var(--border-color));
   height: 18em;
   border-radius: 25px;
   background: var(--border-color);
-  /* background: red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +76,7 @@ drop-shadow( 0 4px 0 var(--border-color));
   width: 55.5em;
   min-width: 40em;
   height: 220px;
-  background: white;
+  background: var(--color-white);
   position: relative;
   filter: var(--custom-filter);
   z-index: 8;
@@ -87,18 +91,18 @@ drop-shadow( 0 4px 0 var(--border-color));
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 0.65em;
   position: relative;
   z-index: 6;
 }
 .button__div {
-  margin-right: 20px;
+  margin-right: 1.25em;
 }
 .button__content{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25em;
 }
 .button__ {
   width: 10rem;
@@ -112,13 +116,13 @@ drop-shadow( 0 4px 0 var(--border-color));
 }
 .button__:hover {
   transition: all 1s;
-  background: #2D2D2C;
+  background: var(--color-icomSocial);
 }
 .button__h4{
   width: 10rem;
   height: 1.5rem;
   font-size: 12px;
-  color: black;
+  color: var(--color-black);
   font-weight: 800;
   border-right: 2px solid white;
   margin-left: 3.125rem;
@@ -132,8 +136,8 @@ drop-shadow( 0 4px 0 var(--border-color));
   justify-content: space-around;
 }
 .borde__about > img {
-  width: 150px;
-  height: 150px;
+  width: 9.375em;
+  height: 9.375em;
   border-radius: 50%;
   object-fit: cover;
   margin-top: 30px;
@@ -163,7 +167,7 @@ drop-shadow( 0 4px 0 var(--border-color));
 }
 .socialMedia__editar {
   width: 50%;
-  height: 150px;
+  height: 9.375em;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -189,11 +193,11 @@ drop-shadow( 0 4px 0 var(--border-color));
 }
 .editar__button:hover {
   transition: all 1s;
-  background: #2D2D2C;
-  color: white;
+  background: var(--color-icomSocial);
+  color: var(--color-white);
 }
 .editar__icom{
-  color: black;
+  color: var(--color-black);
   font-size: 30px;
 }
 .socialMedia_seguidores {
@@ -207,7 +211,7 @@ drop-shadow( 0 4px 0 var(--border-color));
 }
 .socialMedia__logos {
   width: 50%;
-  height: 100px;
+  height: 6.25em;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -217,7 +221,7 @@ drop-shadow( 0 4px 0 var(--border-color));
 .logos__instagram {
   width: 30px;
   height: 30px;
-  background: #2D2D2C;
+  background: var(--color-icomSocial);
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -226,7 +230,7 @@ drop-shadow( 0 4px 0 var(--border-color));
 .logos__twitter{
   width: 30px;
   height: 30px;
-  background: #2D2D2C;
+  background: var(--color-icomSocial);
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -235,24 +239,24 @@ drop-shadow( 0 4px 0 var(--border-color));
 .logos__link{
   width: 30px;
   height: 30px;
-  background: #2D2D2C;
+  background: var(--color-icomSocial);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .logos__instagram > i {
-  color: white;
+  color: var(--color-white);
 }
 .logos__twitter > i {
-  color: white;
+  color: var(--color-white);
 }
 .logos__link > i {
-  color: white;
+  color: var(--color-white);
 }
 .perfil__curvaBranding {
   width: 55.9em;
-  height: 380px;
+  height: 23.75em;
   background: transparent;
   border: 2px solid var(--border-color);
   position: relative;
@@ -261,9 +265,6 @@ drop-shadow( 0 4px 0 var(--border-color));
   display: flex;
   align-items: flex-end;
   z-index: 1;
-  /* gap: 10px; */
-  /* margin-bottom: 40px; */
-  /* justify-content:last baseline; */
 }
 
 .curvaBranding__button {
@@ -276,8 +277,6 @@ drop-shadow( 0 4px 0 var(--border-color));
   align-items: center;
   color: var(--border-button);
   cursor: pointer;
-
-  /* margin-left: 20px; */
 }
 .perfil__curvaBranding div:nth-child(6) {
   border: none;
