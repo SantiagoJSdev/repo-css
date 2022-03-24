@@ -64,9 +64,6 @@ export const App = () => {
               <div className='curvaBranding__button'>Branding</div>
               <div className='curvaBranding__button'>Branding</div>
             </div>
-
-
-
           </div>
         </div>
         {/* //////////////////// */}

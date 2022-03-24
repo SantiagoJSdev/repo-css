@@ -30,10 +30,13 @@ drop-shadow( 0 4px 0 var(--border-color));
   justify-content: center;
   box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.29);
   flex-wrap: wrap;
-  margin-top: -2.375em;
+  margin-top: -3em;
 }
 .informacion__content{
+  width: 56.3em;
+  min-width: 40em;
   display: flex;
+  justify-content: center;
 }
 .container__navBar{
   width: 100%;
@@ -256,6 +259,7 @@ drop-shadow( 0 4px 0 var(--border-color));
 }
 .perfil__curvaBranding {
   width: 55.9em;
+  min-width: 40em;
   height: 23.75em;
   background: transparent;
   border: 2px solid var(--border-color);
