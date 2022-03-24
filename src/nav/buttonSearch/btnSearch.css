@@ -1,0 +1,26 @@
+
+:root {
+    --color-white: #FFFFFF;
+    --color-line : #E3E2E2; 
+    --color-dark : #2D2D2C;
+}
+.button__search {
+    width: 14.625em;
+    height: 1.5625em;
+    display: flex;
+}
+.search__input {
+    width: 12rem;
+    height: 1.2rem;
+    border: 2px solid var(--color-line);
+    border-radius: 25px;
+    padding-left: 40px;
+    color: var(--color-line);
+    font-size: 14px;
+}
+.button__search i {
+    position: absolute;
+    transform: translate(15px, 5px);
+    color: var(--color-line);
+    font-size: 14px;
+}

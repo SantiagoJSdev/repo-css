@@ -1,0 +1,8 @@
+
+.container__dark {
+    width: 3.75em;
+    height: 1.5625em;
+    background: black;
+    border-radius: 25px;
+    margin-left: 1.25em;
+}

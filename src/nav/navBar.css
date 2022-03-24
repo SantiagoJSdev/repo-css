@@ -1,0 +1,125 @@
+body{
+    font-size: 16px;
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-line : #E3E2E2; 
+    --color-dark : #2D2D2C;
+}
+.container__header {
+
+width: 100%;
+height: 6.25em;
+/* background: red; */
+position: relative;
+z-index: 1;
+display: flex;
+flex-direction: column;
+}
+.header__search{
+width: 100%;
+height: 40%;
+background: var(--color-white);
+display: flex;
+border-bottom: 2px solid var(--color-line);
+}
+.header__nav {
+width: 100%;
+height: 60%;
+display: flex;
+align-items: center;
+box-shadow: 0px 10px 13px -12px #c5c5c5, 50px -25px 7px -7px rgba(0,0,0,0);
+
+}
+.nav__menu {
+width: 100%;
+}
+.nav__menu ul{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.nav__menu--perfil {
+width: 5em;
+height: 1.5625em;
+border-radius: 25px;
+background: var(--color-dark);
+display: flex;
+justify-content: center;
+align-items: center;
+color: var(--color-white);
+margin-left: 4.37em;
+}
+.nav__menu--btn {
+width: 15.625em;
+height: 1.875em;
+border-radius: 25px;
+border: 2px solid var(--color-line);
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.btn__empleo {
+width: 5rem;
+height: 1.6rem;
+border-radius: 25px;
+border: 2px solid transparent;
+transition: all 1s;
+cursor: pointer;
+font-size: 14px;
+}
+.btn__empleo:hover {
+transition: all 1s;
+border: 2px solid rgba(255, 0, 128, 0.644);
+}
+.btn__evento {
+width: 5rem;
+height: 1.6rem;
+border-radius: 25px;
+border: 2px solid transparent;
+transition: all 1s;
+cursor: pointer;
+font-size: 14px;
+}
+.btn__evento:hover {
+transition: all 1s;
+border: 2px solid rgba(255, 230, 0, 0.397);
+}
+.btn__concurso {
+width: 5rem;
+height: 1.6rem;
+border-radius: 25px;
+border: 2px solid transparent;
+transition: all 1s;
+cursor: pointer;
+font-size: 14px;
+}
+.btn__concurso:hover {
+transition: all 1s;
+border: 2px solid rgba(91, 14, 179, 0.397);
+}
+.nav__menu--save {
+width: 6.25rem;
+height: 1.5625rem;
+background: transparent;
+border-radius: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid var(--color-line);
+cursor: pointer;
+transition: all 1s;
+margin-right: 6.25rem;
+font-size: 14px;
+}
+.nav__menu--save:hover {
+transition: all 1s;
+border: 2px solid var(--color-dark);
+}
+.search__darkMode {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}

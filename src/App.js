@@ -1,11 +1,18 @@
 
 import React from 'react'
 import './App.css'
+import { NavBar } from './nav/NavBar'
+
+
 
 export const App = () => {
+
+
   return (
+
     <div className='container'>
-      <header className='container__navBar'></header>
+      {/* <header className='container__navBar'></header> */}
+      <NavBar/>
       <div className='container__informacion'>
 
 
