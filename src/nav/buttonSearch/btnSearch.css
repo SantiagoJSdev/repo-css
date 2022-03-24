@@ -5,18 +5,21 @@
     --color-dark : #2D2D2C;
 }
 .button__search {
-    width: 14.625em;
+    width: 18.625em;
     height: 1.5625em;
     display: flex;
+    margin-left: 7.5em;
 }
 .search__input {
-    width: 12rem;
+    width: 18rem;
     height: 1.2rem;
     border: 2px solid var(--color-line);
     border-radius: 25px;
-    padding-left: 40px;
-    color: var(--color-line);
+    padding-left: 3.125rem;
     font-size: 14px;
+}
+.search__input::placeholder{
+    color: var(--color-line);
 }
 .button__search i {
     position: absolute;

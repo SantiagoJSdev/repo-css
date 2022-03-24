@@ -2,6 +2,7 @@
 import React from 'react'
 import './App.css'
 import { NavBar } from './nav/NavBar'
+import { CardPerfil } from './perfil/CardPerfil'
 
 
 
@@ -13,9 +14,10 @@ export const App = () => {
     <div className='container'>
       {/* <header className='container__navBar'></header> */}
       <NavBar/>
+      <CardPerfil/>
       <div className='container__informacion'>
 
-
+{/* 
         <div className='informacion__content'>
           <div className='container__perfil'>
             <div className='perfil__back'>
@@ -72,7 +74,7 @@ export const App = () => {
               <div className='curvaBranding__button'>Branding</div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* //////////////////// */}
       </div>
 

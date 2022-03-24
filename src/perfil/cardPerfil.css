@@ -1,0 +1,237 @@
+:root{
+    --color-black : black; 
+    --color-white : white; 
+    --color-icomSocial: #2D2D2C;
+    --border-color: #ACBBEB;
+    --border-button: #7C829D;
+    --custom-filter: 
+    drop-shadow( -3px 0 0 var(--border-color))
+    drop-shadow( 3px 0 0 var(--border-color))
+    drop-shadow( 0 -3px 0 var(--border-color))
+    drop-shadow( 0 4px 0 var(--border-color));
+    }
+
+.container__Cardperfil {
+width: 50em;
+height: 70vh;
+display: flex;
+justify-content: center;
+position: relative;
+/* clip-path: inset(7% 0 0 0); */
+z-index: 1;
+margin-top: -370px;
+margin-right: 150px;
+/* transform: translate(-100px); */
+}
+.cardperfil__curva3 {
+width: 100%;
+height: 65vh;
+border: 2px solid var(--border-color);
+border-radius: 25px;
+display: flex;
+clip-path: inset(7% 0 0 0);
+align-items: flex-end;
+padding-left: 40px;
+}
+.curva3__button{
+  width: 100px;
+  height: 20px;
+  border-right: 2px solid var(--border-button);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--border-button);
+  cursor: pointer;
+}
+.curva3__button:nth-child(6){
+  border: none;
+}
+.cardperfil__curva2 {
+width: 100%;
+height: 56vh;
+background:  var(--border-color);
+border-radius: 25px;
+display: flex;
+align-items: flex-end;
+position: absolute;
+
+}
+.cardperfil__back-curva1{
+width: calc(100% - 8px);
+height: 45vh;
+background:  transparent;
+border-radius: 25px;
+display: flex;
+position: absolute;
+box-shadow: 0px 10px 13px -7px #000000, 49px 41px 5px -16px rgba(0,0,0,0);
+/* box-shadow: -1px 9px 25px -9px rgba(0,0,0,0.72); */
+}
+.cardperfil__front-curva1{
+width: calc(100% - 6px);
+height: 45vh;
+background:  var(--color-white);
+border-radius: 25px;
+display: flex;
+position: absolute;
+filter: var(--custom-filter);
+justify-content: space-between;
+
+}
+ .curva1__img {
+width: 30em;
+height: 100%;
+/* background: red; */
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-left: 40px;
+margin-top: 30px;
+} 
+.curva1__img > img {
+width: 9.375em;
+height: 9.375em;
+border-radius: 50%;
+object-fit: cover;
+
+} 
+.img__content h1 {
+font-size: 25px;
+font-weight: 600;
+margin-bottom: 10px;
+margin-left: 15px;
+}
+.img__content {
+    line-height: 20px;
+}
+.img__detail{
+    margin-left: 15px;
+}
+.img__detail > h4{
+font-size: 20px;
+font-weight: 500;
+}
+.curva1__social {
+width: 20em;
+height: 100%;
+border-radius: 25px;
+margin-left: 40px;
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 30px;
+margin-top: 30px;
+margin-right: 50px;
+} 
+.social__editar {
+display: flex;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+gap: 50px;
+}
+.editar__btn{
+width: 80px;
+height: 1.4375rem;
+border: 2px solid var(--border-button);
+border-radius: 25px;
+font-size: 12px;
+font-weight: 700;
+cursor: pointer;
+transition: all 1s;
+  }
+.editar__btn:hover {
+transition: all 1s;
+background: var(--color-icomSocial);
+color: var(--color-white);
+}
+.social__editar > i{
+color: var(--color-black);
+font-size: 30px;
+}
+.social_seguidores {
+display: flex;
+ justify-content: flex-end;
+ font-size: 20px;
+}
+.social__logos {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 10px;
+    
+  }
+.logos__instagram {
+width: 30px;
+height: 30px;
+background: var(--color-icomSocial);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+  }
+.logos__twitter{
+width: 30px;
+height: 30px;
+background: var(--color-icomSocial);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+  }
+.logos__link{
+width: 30px;
+height: 30px;
+background: var(--color-icomSocial);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.logos__instagram > i {
+color: var(--color-white);
+}
+.logos__twitter > i {
+color: var(--color-white);
+}
+.logos__link > i {
+color: var(--color-white);
+}
+.curva2__content{
+  width: 100%;
+  display: flex;
+  gap: 1.25em;
+  margin-bottom: 15px;
+}
+.curva2__ {
+  width: 8rem;
+  height: 1.5625rem;
+  border: 2px solid var(--border-button);
+  border-radius: 20px;
+  font-size: 12px;
+  color: var(--border-button);
+  cursor: pointer;
+  transition: all 1s;
+}
+.curva2__:hover {
+  transition: all 1s;
+  background: var(--color-icomSocial);
+}
+.curva2__h4{
+  width: 7rem;
+  height: 1.5625rem;
+  font-size: 12px;
+  color: var(--color-black);
+  font-weight: 800;
+  border-right: 2px solid white;
+  margin-left: 3.125rem;
+}
+.curva2__editar {
+  margin-left: 90px;
+  color: wheat;
+}

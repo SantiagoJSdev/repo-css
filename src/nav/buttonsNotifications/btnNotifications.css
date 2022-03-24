@@ -1,6 +1,61 @@
-
+:root{
+    --color-black : black; 
+    --color-line : #E3E2E2; 
+    --color-white : white; 
+    --color-icomSocial: #2D2D2C;
+    --border-color: #ACBBEB;
+    --border-button: #7C829D;
+}
 .container__Notifications {
     width: 11.25em;
     height: 2.5em;
-    background: gold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Notifications__campana{
+width: 50px;
+height: 1.9em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Notifications__campana > i{
+    font-size: 18px;
+    }
+
+.Notifications__globo {
+    width: 50px;
+    height: 1.9em;
+    border-right: 2px solid var(--color-line);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Notifications__globo > i{
+    font-size: 25px;
+}
+.Notifications__icom {
+    width: 50px;
+    height: 1.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icom__logo {
+    width: 15px;
+    height: 10px;
+    border-bottom: 2px solid var(--color-icomSocial);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.icom__logo::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    border-top: 2px solid var(--color-icomSocial);
+   
 }
