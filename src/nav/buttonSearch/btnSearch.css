@@ -1,4 +1,6 @@
-
+body {
+    font-size: 16px;
+}
 :root {
     --color-white: #FFFFFF;
     --color-line : #E3E2E2; 

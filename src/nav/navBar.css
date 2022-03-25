@@ -11,7 +11,6 @@ body{
 
 width: 100%;
 height: 6.25em;
-/* background: red; */
 position: relative;
 z-index: 5;
 display: flex;
@@ -53,26 +52,28 @@ color: var(--color-white);
 margin-left: 9em;
 }
 .nav__menu--btn {
-width: 15.625em;
-height: 1.875em;
+width: 22.625em;
+height: 1.8em;
 border-radius: 25px;
 border: 2px solid var(--color-line);
 display: flex;
 align-items: center;
 justify-content: space-around;
-margin-left: 350px;
+margin-left: 15.625em;
+position: relative;
 }
 .btn__empleo {
 width: 5rem;
 height: 1.6rem;
 border-radius: 25px;
 border: 2px solid transparent;
-transition: all 1s;
+transition: all 0.5s;
 cursor: pointer;
 font-size: 14px;
+margin-left: -8px;
 }
 .btn__empleo:hover {
-transition: all 1s;
+transition: all 0.5s;
 border: 2px solid rgba(255, 0, 128, 0.644);
 }
 .btn__evento {
@@ -83,6 +84,7 @@ border: 2px solid transparent;
 transition: all 1s;
 cursor: pointer;
 font-size: 14px;
+margin-left: 5px;
 }
 .btn__evento:hover {
 transition: all 1s;
@@ -96,6 +98,7 @@ border: 2px solid transparent;
 transition: all 1s;
 cursor: pointer;
 font-size: 14px;
+/* transform: translate(5px); */
 }
 .btn__concurso:hover {
 transition: all 1s;
@@ -125,3 +128,151 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
+.empleo__dropdown {
+    width: 125px;
+    height: 100px;
+    background: var(--color-white);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 30px;
+    margin-left: -10px;
+    border-radius: 0 0 25px 25px;
+    box-shadow:0 5px 6px 0 rgba(200, 200, 200, 0.4) ;
+    border-top: none;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+.empleo__dropdown > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.empleo__dropdown > ul > li {
+    width: 5rem;
+    height: 1.6rem;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empleo__dropdown > ul > li:nth-child(3) {
+    width: 7rem;
+    height: 1.6rem;
+}
+.empleo__dropdown > ul > li:hover {
+    transition: all 1s;
+    border: 2px solid rgba(255, 0, 128, 0.644);
+}
+.btn__empleo:hover > .empleo__dropdown {
+    transition: all 0.5s;
+    visibility: visible;
+}
+.empleo__evento {
+    width: 125px;
+    height: 100px;
+    background: var(--color-white);
+    position: absolute;
+    margin-top: 9px;
+    margin-left: -22px;
+    border-radius: 0 0 25px 25px;
+    box-shadow:0 5px 6px 0 rgba(200, 200, 200, 0.4) ;
+    border-top: none;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+.empleo__evento > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.empleo__evento > ul > li {
+    width: 5rem;
+    height: 1.6rem;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empleo__evento > ul > li:nth-child(3) {
+    width: 7rem;
+    height: 1.6rem;
+}
+.empleo__evento > ul > li:hover {
+    transition: all 1s;
+    border: 2px solid rgba(255, 230, 0, 0.397);
+}
+.btn__evento:hover > .empleo__evento {
+    transition: all 0.5s;
+    visibility: visible;
+}
+.empleo__concurso {
+    width: 125px;
+    height: 100px;
+    background: var(--color-white);
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -15px;
+    border-radius: 0 0 25px 25px;
+    box-shadow:0 5px 6px 0 rgba(200, 200, 200, 0.4) ;
+    border-top: none;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+.empleo__concurso > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.empleo__concurso > ul > li {
+    width: 5rem;
+    height: 1.6rem;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empleo__concurso > ul > li:nth-child(3) {
+    width: 7rem;
+    height: 1.6rem;
+}
+.btn__concurso:hover > .empleo__concurso {
+    transition: all 0.5s;
+    visibility: visible;
+}
+.empleo__concurso > ul > li:hover {
+    transition: all 1s;
+    border: 2px solid rgba(91, 14, 179, 0.397);
+}
+
+@media screen and (max-width:1060px){
+    .nav__menu--btn {
+        margin-left: 2.625em;
+        }
+    .nav__menu--perfil {
+        margin-left: 4em;
+        }
+    .nav__menu--save {
+        margin-right: 1.25rem;
+          
+        }
+  }

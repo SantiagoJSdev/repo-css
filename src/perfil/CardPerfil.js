@@ -20,7 +20,7 @@ export const CardPerfil = () => {
                     <button className='curva2__'>Fotografia</button>
                     <div className='curva2__editar'>Logo</div>
                 </div>
-                
+
             </div>
             <div className='cardperfil__back-curva1'></div>
             <div className='cardperfil__front-curva1'>

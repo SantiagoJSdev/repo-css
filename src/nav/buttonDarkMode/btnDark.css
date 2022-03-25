@@ -1,4 +1,6 @@
-
+body {
+    font-size: 16px;
+}
 .container__dark {
     width: 3.75em;
     height: 1.5625em;
